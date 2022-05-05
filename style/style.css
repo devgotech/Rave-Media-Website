@@ -1,0 +1,33 @@
+@import "../assets/bootstrap/css/bootstrap.min.css";
+@import "../assets/bootstrap/bootstrap-icons/_bootstrap-icons.scss";
+
+body {
+    background-color: rgb(243, 236, 155);
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+.sec-bg{
+    position: absolute;
+    width: auto;
+    left: 20%;
+    z-index: -1;
+}
+
+.bg-index{
+    position: relative;
+    z-index: -1;
+}
+
+.btn-faq-accordion {
+    background-color: rgb(243, 211, 95);
+}
+
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
