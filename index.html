@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html method="POST">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/style/custom.scss">
-    <link rel="stylesheet" href="/assets/bootstrap/bootstrap-icons/_bootstrap-icons.scss">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/boostrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Rave Media</title>
 </head>
 
@@ -29,47 +30,77 @@
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="#about" class="nav-link">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown"
                                 aria-expanded="false">Blog</a>
-                            <ul class="dropdown-menu bg-transparent bg-opacity-50" aria-labelledby="dropdown10">
-                                <li><a class="dropdown-item text-white opacity-75" href="#featured">Featured</a></li>
-                                <li><a class="dropdown-item text-white opacity-75" href="#news">News</a></li>
-                                <li><a class="dropdown-item text-white opacity-75" href="#crypto">Crypto</a></li>
-                                <li><a class="dropdown-item text-white opacity-75" href="#faq">FAQ Questions?</a></li>
+                            <ul class="dropdown-menu text-dark bg-opacity-50" aria-labelledby="dropdown10">
+                                <li><a class="dropdown-item opacity-75" href="#featured">Featured</a></li>
+                                <li><a class="dropdown-item opacity-75" href="#news">News</a></li>
+                                <li><a class="dropdown-item opacity-75" href="#crypto">Crypto</a></li>
+                                <li><a class="dropdown-item opacity-75" href="#books">Books</a></li>
+                                <li><a class="dropdown-item opacity-75" href="#faq">FAQ Questions?</a></li>
                             </ul>
+                        </li>
                         <li class="nav-item">
                             <a href="#contact" class="nav-link">Contact</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- End Navbar -->
+    </div>
+    <!-- End Navbar -->
 
-        <!-- showcase -->
+    <!-- social media buttons -->
+    <div class="social-link card">
+        <ul class="s-ul bg-rounded p-3">
+            <li><a href="" class="bi bi-telegram text-dark"></a></li>
+            <li><a href="" class="bi bi-twitter text-dark"></a></li>
+            <li><a href="" class="bi bi-instagram text-dark"></a></li>
+            <li><a href="" class="bi bi-facebook text-dark"></a></li>
+        </ul>
+    </div>
+    <!-- end social media buttons -->
+
+    <!-- Rave Video -->
+    <!-- <section>
+        <div class="container card">
+            <a href="#home">
+                <button class="btn btn-lg btn-warning text-dark text-center d-flex align-items-center justify-content-between sb">START HERE</button>
+            </a>
+            <video autoplay muted src="template/img/VID-20220510-WA0032.mp4" class="align-content-center w-100 "></video>
+        </div>
+
+    </section> -->
+    <!-- End of Rave video -->
+
+    <!-- showcase -->
+    <div  id="home" class="container">
         <section class="bg-dark text-light p-4 text-center text-sm-start bg-img bg-index p-lg-0 pt-5">
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-lg-center justify-content-between">
                     <div class="m-md-5">
                         <h1>Welcome To <span class="text-primary">Rave<span class="text-warning">Media
                                     📚</span></h1>
-                        <p class="lead my-4 font-monospace">Rave Media Serves You With Exclusive Stories,
+                        <p class="lead my-4 ">Rave Media Serves You With Exclusive Stories,
                             Trends,
                             Novels, Crypto News and Lots More...</p>
                         <button class="btn btn-primary btn-lg text-lg-start">Get Started</button>
-                        <button class="btn btn-light btn-lg text-lg-start">Login</button>
+                        <button class="btn btn-light btn-lg text-lg-start">Enroll Now</button>
+                        
                     </div>
-                    <img class="img-fluid w-50 d-none d-sm-block" src="img/featured.png" alt="">
+                    <img class="img-fluid w-50 d-none d-sm-block" src="template/img/featured.png" alt="">
                 </div>
             </div>
         </section>
         <!-- End Showcase -->
 
         <!-- Newsletter -->
-        <section class="bg-primary p-4 text-light">
+        <section class="bg-primary p-4 text-light card">
             <div class="container">
                 <div class="d-md-flex justify-content-between align-items-center">
                     <h3 class="mb-3 mb-md-0">Sign Up for Our Newsletter</h3>
@@ -87,10 +118,10 @@
             <div class="container mb-2">
                 <div class="row text-center g-2">
                     <div class="col-md">
-                        <div class="card bg-secondary text-light">
+                        <div class="card bg-ft text-light">
                             <div class="card-body text-center">
                                 <div class="h1">
-                                    <i class="bi bi-incognito"></i>
+                                    <i class="bi bi-newspaper"></i>
                                 </div>
                                 <h3 class="card-title mb-3">Headline</h3>
                                 <p class="card-text">
@@ -104,10 +135,10 @@
                         </div>
                     </div>
                     <div class="col-md">
-                        <div class="card bg-secondary text-light">
+                        <div class="card bg-ft text-light">
                             <div class="card-body text-center">
                                 <div class="h1">
-                                    <i class="bi bi-incognito"></i>
+                                    <i class="bi bi-newspaper"></i>
                                 </div>
                                 <h3 class="card-title mb-3">Headline</h3>
                                 <p class="card-text">
@@ -121,10 +152,10 @@
                         </div>
                     </div>
                     <div class="col-md">
-                        <div class="card bg-secondary text-light">
+                        <div class="card bg-ft text-light">
                             <div class="card-body text-center">
                                 <div class="h1">
-                                    <i class="bi bi-incognito"></i>
+                                    <i class="bi bi-newspaper"></i>
                                 </div>
                                 <h3 class="card-title mb-3">Headline</h3>
                                 <p class="card-text">
@@ -142,10 +173,10 @@
             <div class="container mb-2">
                 <div class="row text-center g-2">
                     <div class="col-md">
-                        <div class="card bg-secondary text-light">
+                        <div class="card bg-ft text-light">
                             <div class="card-body text-center">
                                 <div class="h1">
-                                    <i class="bi bi-incognito"></i>
+                                    <i class="bi bi-newspaper"></i>
                                 </div>
                                 <h3 class="card-title mb-3">Headline</h3>
                                 <p class="card-text">
@@ -159,10 +190,10 @@
                         </div>
                     </div>
                     <div class="col-md">
-                        <div class="card bg-secondary text-light">
+                        <div class="card bg-ft text-light">
                             <div class="card-body text-center">
                                 <div class="h1">
-                                    <i class="bi bi-incognito"></i>
+                                    <i class="bi bi-newspaper"></i>
                                 </div>
                                 <h3 class="card-title mb-3">Headline</h3>
                                 <p class="card-text">
@@ -176,10 +207,10 @@
                         </div>
                     </div>
                     <div class="col-md">
-                        <div class="card bg-secondary text-light">
+                        <div class="card bg-ft text-light">
                             <div class="card-body text-center">
                                 <div class="h1">
-                                    <i class="bi bi-incognito"></i>
+                                    <i class="bi bi-newspaper"></i>
                                 </div>
                                 <h3 class="card-title mb-3">Headline</h3>
                                 <p class="card-text">
@@ -206,10 +237,10 @@
             <div class="container pt-3">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg d-none d-md-block">
-                        <img src="/template/img/person-sitting.png" class="img-fluid" alt="">
+                        <img src="template/img/person-sitting.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-md p5">
-                        <h2 id="news" class="text-center p-3 text-primary bg-secondary bg-opacity-10">Latest News</h2>
+                        <h2 id="news" class="text-center p-3 text-primary bg-ft bg-opacity-10">Latest News</h2>
                         <p class="lead">
                         <p class="h4">News Title</p>
                         <p class="text-secondary">5-05-2022</p>
@@ -338,7 +369,6 @@
                             Read More
                             <i class="bi bi-chevron-compact-right"></i>
                         </a>
-
                         <div class="pt-2 text-center">
                             <p>
                                 <a class="btn btn-warning">
@@ -349,9 +379,9 @@
                         </div>
                     </div>
                     <div class="col-lg d-none d-md-block">
-                        <img src="/template/img/do-you-know-crypto-crop.jpg" class="img-fluid" alt="">
-                        <img src="/template/img/ask-me-crop.jpg" class="img-fluid" alt="">
-                        <img src="/template/img/hodl-crop.jpg" class="img-fluid" alt="">
+                        <img src="template/img/do-you-know-crypto-crop.jpg" class="img-fluid" alt="">
+                        <img src="template/img/ask-me-crop.jpg" class="img-fluid" alt="">
+                        <img src="template/img/hodl-crop.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -367,7 +397,7 @@
                     <div class="col-md-4 col-lg-3">
                         <div class="card bg-light">
                             <div class="card-body text-center">
-                                <img src="/template/img/Book-cover.jpg" alt="" class="rounded">
+                                <img src="template/img/Book-cover.jpg" alt="" class="rounded">
                                 <p class="h4">Book Title</p>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <a class="btn btn-dark">
@@ -378,7 +408,7 @@
                     <div class="col-md-4 col-lg-3">
                         <div class="card bg-light">
                             <div class="card-body text-center">
-                                <img src="/template/img/Book-cover.jpg" alt="" class="rounded">
+                                <img src="template/img/Book-cover.jpg" alt="" class="rounded">
                                 <p class="h4">Book Title</p>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <a class="btn btn-dark">
@@ -389,7 +419,7 @@
                     <div class="col-md-4 col-lg-3">
                         <div class="card bg-light">
                             <div class="card-body text-center">
-                                <img src="/template/img/Book-cover.jpg" alt="" class="rounded">
+                                <img src="template/img/Book-cover.jpg" alt="" class="rounded">
                                 <p class="h4">Book Title</p>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <a class="btn btn-dark">
@@ -400,7 +430,7 @@
                     <div class="col-md-4 col-lg-3">
                         <div class="card bg-light">
                             <div class="card-body text-center">
-                                <img src="/template/img/Book-cover.jpg" alt="" class="rounded">
+                                <img src="template/img/Book-cover.jpg" alt="" class="rounded">
                                 <p class="h4">Book Title</p>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <a class="btn btn-dark">
@@ -411,7 +441,7 @@
                     <div class="col-md-4 col-lg-3">
                         <div class="card bg-light">
                             <div class="card-body text-center">
-                                <img src="/template/img/Book-cover.jpg" alt="" class="rounded">
+                                <img src="template/img/Book-cover.jpg" alt="" class="rounded">
                                 <p class="h4">Book Title</p>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <a class="btn btn-dark">
@@ -422,7 +452,29 @@
                     <div class="col-md-4 col-lg-3">
                         <div class="card bg-light">
                             <div class="card-body text-center">
-                                <img src="/template/img/Book-cover.jpg" alt="" class="rounded">
+                                <img src="template/img/Book-cover.jpg" alt="" class="rounded">
+                                <p class="h4">Book Title</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <a class="btn btn-dark">
+                                    <i class="bi bi-download">Get Book</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="template/img/Book-cover.jpg" alt="" class="rounded">
+                                <p class="h4">Book Title</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <a class="btn btn-dark">
+                                    <i class="bi bi-download">Get Book</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="template/img/Book-cover.jpg" alt="" class="rounded">
                                 <p class="h4">Book Title</p>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <a class="btn btn-dark">
@@ -438,8 +490,60 @@
                     </div>
                 </div>
             </div>
-
         </section>
+        <!-- end of books -->
+
+        <!-- Instructors -->
+        <section class="p-5" id="featured">
+            <div class="p-5 bg-primary" id="instructor">
+                <h2 class="text-center text-white">Our Instructors</h2>
+                <p class="lead text-center text-white mb-5">
+                    Our Instructors all have 4+ years working as Crypto Trading Experts in the Industry
+                </p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="template/img/instructors/IMG_E9697.png" alt="" class="rounded-circle mb-3">
+                                <h3 class="card-title mb-3">John Doe</h3>
+                                <p>Quick speech!!!!! He is very good with trading signals and has made over $40,000 in crypto within this year</p>
+                                <a href="" class="bi-twitter text-dark mx-1"></a>
+                                <a href="" class="bi-facebook text-dark mx-1"></a>
+                                <a href="" class="bi-whatsapp text-dark mx-1"></a>
+                                <a href="" class="bi-telegram text-dark mx-1"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="template/img/instructors/IMG_E9697.png" alt="" class="rounded-circle mb-3">
+                                <h3 class="card-title mb-3">John Doe</h3>
+                                <p>Quick speech!!!!! He is very good with trading signals and has made over $40,000 in crypto within this year</p>
+                                <a href="" class="bi-twitter text-dark mx-1"></a>
+                                <a href="" class="bi-facebook text-dark mx-1"></a>
+                                <a href="" class="bi-whatsapp text-dark mx-1"></a>
+                                <a href="" class="bi-telegram text-dark mx-1"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="template/img/instructors/IMG_E9697.png" alt="" class="rounded-circle mb-3">
+                                <h3 class="card-title mb-3">John Doe</h3>
+                                <p>Quick speech!!!!! He is very good with trading signals and has made over $40,000 in crypto within this year</p>
+                                <a href="" class="bi-twitter text-dark mx-1"></a>
+                                <a href="" class="bi-facebook text-dark mx-1"></a>
+                                <a href="" class="bi-whatsapp text-dark mx-1"></a>
+                                <a href="" class="bi-telegram text-dark mx-1"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Instructors -->
 
         <!-- Frequently Asked Questions -->
         <section class="p-5">
@@ -499,15 +603,33 @@
         </section>
         <!-- End of FAQ -->
 
-        <!--  -->
+        <!-- Form Modal -->
+        <section>
+            <div class="container">
+                <div>
 
+                </div>
+            </div>
+        </section>
+        <!-- End Form Modal -->
 
+        
+        <script>
+            var video = document.querySelector('video')
+            if (video.play() !== undefined) {
+                video.muted = true
+                video.play().then(_ => {
+                    // Muted autoplay started!
+                }).catch(error => {
+                    // Autoplay was prevented due to some error.
+                });
+            }
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-        <script src="assets/bootstrap/bootstrap.min.js"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     </div>
-
 </body>
 <footer>
     <div style="padding-top: 100px;"></div>
